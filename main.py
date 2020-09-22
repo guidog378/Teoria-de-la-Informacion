@@ -14,7 +14,7 @@ def main():
     n = sys.argv[2]
     simbolos = generar_diccionario(path)
     secuencia = simular_secuencia(simbolos, n)
-    informacion, entropia = calculos.obtenerDatos(simbolos)
+    informacion, entropia = calculos.obtenerDatos(simbolos, secuencia)
     print("""Cantidad de información presente en la secuencia: {} bits.
     Entropía de la fuente: {} bits.""".format(informacion, entropia))
 
