@@ -4,6 +4,8 @@ def generar_diccionario(path):
 
     simbolos = {}
     with open(path, encoding='utf-8') as archivoSimbolos:
-        pass
-        # creacion diccionario
+        # se supone que el archivo viene estructurado por "SIMBOLO PROBABILIDAD" en cada linea
+        for linea in archivoSimbolos:
+            valores = linea.split()
+            simbolos[valores[0]]=float(valores[1])
     return simbolos
