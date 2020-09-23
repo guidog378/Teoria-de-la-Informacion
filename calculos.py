@@ -42,8 +42,3 @@ def calculaEntropia(cantInformacion,diccionario):
         entropia += probabilidad * cantInformacion[i];
         i = i +1;
     return entropia;
-
-diccionario = {'a':0.78, 'b':0.12, 'c':1, 'd':0.1, 'e':0}
-vector = calculaCantInformacion(diccionario);
-print(vector);
-print(calculaEntropia(vector, diccionario));
